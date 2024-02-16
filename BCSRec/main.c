@@ -89,7 +89,6 @@ int getPerimeter(int *length, int *width) {
 
 int getArea(int *length, int *width) {
 	int area = *length * *width;
-	printf("area: %d\n", area);
 	return area;
 }
 
