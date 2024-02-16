@@ -60,5 +60,33 @@ namespace REQ001
 			Result = setLength(100, Result);
 			Assert::AreEqual(Expected, Result);
 		}
+
+		// testing setWidth function
+		// positive value: width = 7
+		TEST_METHOD(SetWidthFunctionality)
+		{
+			int Expected = 7;
+			int Result = 0;
+			setWidth(Expected, Result);
+			Assert::AreEqual(Expected, Result);
+		}
+
+		// value 0: width = 0
+		TEST_METHOD(SetWidthLowerBoundFunctionality)
+		{
+			int Expected = 1;
+			int Result = 0;
+			Result = setWidth(0, Result);
+			Assert::AreEqual(Expected, Result);
+		}
+
+		// value 100: width = 100
+		TEST_METHOD(SetWidthUpperBoundFunctionality)
+		{
+			int Expected = 1;
+			int Result = 0;
+			Result = setWidth(100, Result);
+			Assert::AreEqual(Expected, Result);
+		}
 	};
 }
